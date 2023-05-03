@@ -1,6 +1,7 @@
 import ruivo from "../img/ruivo.png"
 import kevin from "../img/kevin.PNG"
 
+
 export default function Contatos(){
     const contatos = [
         {
