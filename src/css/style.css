@@ -57,6 +57,30 @@ body{
     padding-left: 1em;
 }
 
+
+/* Stories */
+.stories{
+    gap:1em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.story{
+    cursor: pointer;
+    background-image: url("../img/stories_background.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.story:hover{
+    transform: scale(1.5);
+}
+
+
+
 /* Container */
 .flex{
     display: flex;

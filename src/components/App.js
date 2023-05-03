@@ -1,13 +1,13 @@
-import Topo from "./Topo"
-import Conteudo from "./Conteudo"
+import NavBar from "./NavBar"
+import Body from "./Body"
 import "../css/reset.css"
 import "../css/style.css"
 
 export default function App (){
     return (
         <div>
-            <Topo />
-            <Conteudo />
+            <NavBar />
+            <Body />
         </div>
     )
 };
