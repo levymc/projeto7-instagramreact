@@ -96,7 +96,7 @@ body{
 }
 .post{
     flex-direction: column;
-    height: 46.8125em;
+    height: 35em;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
