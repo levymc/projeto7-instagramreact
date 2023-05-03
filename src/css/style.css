@@ -3,6 +3,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Topo */
+.iconesDireita{
+    gap: 0.5em;
+}
+
+.iconesDireita img{
+    cursor: pointer;
+}
+
+.divLogo{
+    gap: 0.5em;
+}
+.divLogo img{
+    cursor: pointer;
+}
+
+
 /* Container */
 .flex{
     display: flex;
@@ -13,8 +30,9 @@
 }
 
 .container-topo{
+    height: 3.5em;
     background-color: aquamarine;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -34,9 +52,11 @@
 
 .conteudo-posts{
     background-color: antiquewhite;
+    height: 100%;
 }
 
 .stories{
+    margin-top: 3em;
     background-color: rgb(206, 139, 139);
     height: 5em;
     margin-bottom: 2em;
