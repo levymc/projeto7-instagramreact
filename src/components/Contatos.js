@@ -4,6 +4,14 @@ import kevin from "../img/kevin.PNG"
 
 
 export default function Contatos(){
+    function promptName (){
+        let usuario = document.getElementById("usuario");
+        let newName = prompt("Digite o novo nome de usuário");
+        usuario.innerHTML = '';
+        usuario.innerHTML += newName
+        document.querySelector("#lapis").removeEventListener("click", promptName);
+    }
+    
     const contatos = [
         {
             nome: "kevin",
@@ -40,10 +48,3 @@ export default function Contatos(){
     )
 }
 
-function promptName (){
-    let usuario = document.getElementById("usuario");
-    let newName = prompt("Digite o novo nome de usuário");
-    usuario.innerHTML = '';
-    usuario.innerHTML += newName
-    document.querySelector("#lapis").removeEventListener("click", promptName);
-}
