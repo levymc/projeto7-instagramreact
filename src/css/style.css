@@ -1,0 +1,15 @@
+/* Tudo */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.flex{
+    display: flex;
+}
+
+.container-topo{
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+}
