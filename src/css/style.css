@@ -10,15 +10,48 @@
 
 .iconesDireita img{
     cursor: pointer;
+    transition: transform 0.3s;
+}
+.iconesDireita img:hover{
+    transform: scale(1.5);
 }
 
 .divLogo{
     gap: 0.5em;
 }
+
 .divLogo img{
     cursor: pointer;
 }
 
+.mini-logo img{
+    transition: transform 0.3s;
+}
+
+.mini-logo img:hover{
+    transform: scale(1.5);
+}
+
+.busca input {
+    width: 16.67em;
+    height: 2.22em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 0.08em solid #DBDBDB;
+    background-color: #FAFAFA;;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 3.71em 0;
+}
+
+.busca input:focus {
+    background-position: 0;
+    text-align: start;
+    padding-left: 1em;
+}
 
 /* Container */
 .flex{
