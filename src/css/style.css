@@ -71,7 +71,7 @@
 
 .conteudo {
     height: auto;
-    width: 70%;
+    width: 55%;
     margin: auto;
 }
 
@@ -95,7 +95,7 @@
 .post{
     flex-direction: column;
     height: 46.8125em;
-    width: 70%;
+    width: 100%;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
@@ -105,7 +105,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
-    width: 70%;
+    width: 100%;
     background-color: rgb(1, 53, 17);
     height: 5em;
     margin-bottom: 1.75em;
@@ -114,7 +114,19 @@
     border-radius: 3px;
 }
 
+
+
+
+/* Contatos */
+
 .contatos {
-    width: 30%;
+    width: 35%;
     background-color: blueviolet;
+    padding-top: 3em;
+    padding-left: 1.5em;
+}
+
+#userImg{
+    border-radius: 50%;
+    width: 3em;
 }
