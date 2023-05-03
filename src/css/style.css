@@ -138,7 +138,14 @@ body{
 
 .user{
     align-items: center;
-    gap: 0.5em;
+    gap: 0.75em;
+}
+#lapis{
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#lapis:hover{
+    transform: scale(1.5);
 }
 
 .conteudo-contatos{
