@@ -8,8 +8,27 @@
     display: flex;
 }
 
+.container{
+    flex-direction: column;
+}
+
 .container-topo{
     background-color: aquamarine;
     justify-content: space-between;
     align-items: center;
+}
+
+.conteudo {
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+}
+.posts {
+    width: 70%;
+    background-color: brown;
+}
+
+.contatos {
+    width: 30%;
+    background-color: blueviolet;
 }
