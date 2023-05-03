@@ -5,17 +5,21 @@ import kevin from "../img/kevin.PNG"
 
 export default function Contatos(){
 
-    function promptImage (){
+    function promptImage() {
         let image = document.getElementById("userImg");
-        let newImage = prompt("Qual o link da outra imagem?")
-        image.src = newImage
-    }
+        let newImage = prompt("Qual o link da outra imagem?");
+      
+        if (newImage && newImage.trim() !== "" && (newImage.startsWith("http://") || newImage.startsWith("https://"))) {
+          image.src = newImage;
+        } else {
+          alert("Digite uma URL válida!");
+        }
+      }
 
     function promptName (){
         let usuario = document.getElementById("usuario");
         let newName = prompt("Digite o novo nome de usuário");
-        usuario.innerHTML = '';
-        usuario.innerHTML += newName
+        usuario.innerHTML = newName && newName.trim() ? newName : usuario.innerHTML;
         document.querySelector("#lapis").removeEventListener("click", promptName);
     }
 
