@@ -70,7 +70,7 @@
 }
 
 .conteudo {
-    height: 100vh;
+    height: auto;
     width: 70%;
     margin: auto;
 }
@@ -79,20 +79,39 @@
     width: 70%;
     background-color: brown;
     flex-direction: column;
+    height: auto;
     /* align-items: center; */
     /* justify-content: center; */
 }
 
 .conteudo-posts{
     background-color: antiquewhite;
-    height: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.75em;
+}
+.post{
+    flex-direction: column;
+    height: 46.8125em;
+    width: 70%;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
 }
 
 .stories{
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3em;
-    background-color: rgb(206, 139, 139);
+    width: 70%;
+    background-color: rgb(1, 53, 17);
     height: 5em;
-    margin-bottom: 2em;
+    margin-bottom: 1.75em;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
 }
 
 .contatos {
