@@ -4,8 +4,18 @@ import heart from "../img/heart.svg"
 import aviao from "../img/aviao.svg"
 import marcador from "../img/marcador.svg"
 import pontinhos from "../img/pontinhos.svg"
+import React, { useState } from 'react';
+
 
 export default function Post(){
+    const [backgroundColor, setBackgroundColor] = useState('');
+    const handleClickButton = () => {
+        if (backgroundColor === "red") {
+            setBackgroundColor("");
+        } else {
+            setBackgroundColor("red");
+        }
+    };
     const dados = [
         {
             userImage: ruivo,
@@ -27,7 +37,9 @@ export default function Post(){
                     </div>
                     <img className="postImage" data-test="post-image" src={dado.userImage} alt={dado.userName} />
                     <div className="icones flex">
-                        <img className="iconJump like" src={heart} data-test="like-post" alt="Heart" />
+                        <div className="coracao iconJump" style={{ backgroundColor: backgroundColor }} onClick={handleClickButton}>
+                            <ion-icon name="heart-outline" data-test="like-post"></ion-icon>
+                            </div>  
                         <img className="iconJump" src={chatbubble} alt="Chatbubble" />
                         <img className="iconJump" src={aviao} alt="Airplane" />
                         <img className="iconJump marcador" data-test="save-post" src={marcador} alt="Marcador" />

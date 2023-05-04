@@ -172,6 +172,14 @@ body{
     gap: 0.5em;
     position: relative;
 }
+.coracao{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+.red{
+    color: red;
+}
 .marcador{
     position: absolute;
     right: 0.5em;
