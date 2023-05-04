@@ -1,8 +1,8 @@
 /* Tudo */
 *{
-    font-family: 'Roboto', 'sans-serif' !important;
+    font-family: 'Roboto', sans-serif !important;
     user-select: none;
-    font-style: normal;
+    font-style: normal !important;
 }
 body{
     background: #E5E5E5;
