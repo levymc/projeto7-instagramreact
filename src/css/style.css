@@ -61,8 +61,14 @@ body{
 /* Stories */
 .stories{
     gap:1em;
-    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 1em;
+    height: 6em;
+    justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
+    width: 55%;
+    overflow-y: hidden;
 }
 .container-story{
     display: flex;

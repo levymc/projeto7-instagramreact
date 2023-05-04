@@ -7,6 +7,15 @@ export default function Stories(){
             <Story />
             <Story />
             <Story />
+            <Story />
+            <Story />
+            <Story />
+            <Story />
+            <Story />
+            <Story />
+            <Story />
+            <Story />
+            <Story />
         </div>
     )
 }
