@@ -3,6 +3,7 @@ import chatbubble from "../img/chatbubble.svg"
 import heart from "../img/heart.svg"
 import aviao from "../img/aviao.svg"
 import marcador from "../img/marcador.svg"
+import pontinhos from "../img/pontinhos.svg"
 
 export default function Post(){
     const dados = [
@@ -22,6 +23,7 @@ export default function Post(){
                     <div className="userName flex">
                         <img src={dado.urlImage} className="miniImage" alt="" />
                         <h3>{dado.userName}</h3>
+                        <img className="pontinhos pointer" src={pontinhos} alt="Pontinhos" />
                     </div>
                     <img className="postImage" src={dado.userImage} alt={dado.userName} />
                     <div className="icones flex">
