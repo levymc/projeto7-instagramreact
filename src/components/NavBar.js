@@ -14,10 +14,10 @@ export default function Topo (){
             </div>
             <div className="busca"><input type="text" placeholder="Pesquisar" /></div>
             <div className="iconesDireita flex">
-                <img src={aviao} alt="Aviao" />
-                <img src={bussola} alt="Bússola" />
-                <img src={heart} alt="Coração" />
-                <img src={person} alt="Pessoa" />
+                <img className="iconJump" src={aviao} alt="Aviao" />
+                <img className="iconJump" src={bussola} alt="Bússola" />
+                <img className="iconJump" src={heart} alt="Coração" />
+                <img className="iconJump" src={person} alt="Pessoa" />
                 </div>
         </div>
     )

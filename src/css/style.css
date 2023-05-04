@@ -12,11 +12,11 @@ body{
     gap: 0.5em;
 }
 
-.iconesDireita img{
+.iconJump{
     cursor: pointer;
     transition: transform 0.3s;
 }
-.iconesDireita img:hover{
+.iconJump:hover{
     transform: scale(1.5);
 }
 
@@ -130,7 +130,7 @@ body{
 }
 .post{
     flex-direction: column;
-    height: 35em;
+    height: auto;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -143,6 +143,10 @@ body{
     align-items: center;
     gap: 0.5em;
     padding: 0.75em;
+}
+.icones{
+    padding: 0.5em;
+    gap: 0.5em;
 }
 
 .stories{
