@@ -20,6 +20,6 @@ export default function User(){
         document.querySelector("#lapis").removeEventListener("click", promptName);
     }
     return (
-        <div className="user flex"><img onClick={promptImage} id="userImg" src={ruivo} alt="Eu" /><h4 id="usuario">levymc</h4><img onClick={promptName} id="lapis" src={lapis} alt="Lapis" /></div>
+        <div className="user flex"><img onClick={promptImage} id="userImg" data-test="profile-image" src={ruivo} alt="Eu" /><h4 data-test="name" id="usuario">levymc</h4><img onClick={promptName} data-test="edit-name" id="lapis" src={lapis} alt="Lapis" /></div>
     )
 }

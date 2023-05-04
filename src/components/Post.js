@@ -19,21 +19,21 @@ export default function Post(){
     return(
         <>
             {dados.map((dado) =>
-                <div className="post">
+                <div className="post" data-test="post">
                     <div className="userName flex">
                         <img src={dado.urlImage} className="miniImage" alt="" />
                         <h3>{dado.userName}</h3>
                         <img className="pontinhos pointer" src={pontinhos} alt="Pontinhos" />
                     </div>
-                    <img className="postImage" src={dado.userImage} alt={dado.userName} />
+                    <img className="postImage" data-test="post-image" src={dado.userImage} alt={dado.userName} />
                     <div className="icones flex">
-                        <img className="iconJump" src={heart} alt="Heart" />
+                        <img className="iconJump" src={heart} data-test="like-post" alt="Heart" />
                         <img className="iconJump" src={chatbubble} alt="Chatbubble" />
                         <img className="iconJump" src={aviao} alt="Airplane" />
-                        <img className="iconJump marcador" src={marcador} alt="Marcador" />
+                        <img className="iconJump marcador" data-test="save-post" src={marcador} alt="Marcador" />
                     </div>
                     <div className="legenda flex">
-                        <img src={dado.imgQuemCurtiu} className="imageQuemCurtiu" alt="" /> <h3>Curtido por {dado.quemCurtiu} e outras {dado.qntsPessoas} pessoas</h3>
+                        <img src={dado.imgQuemCurtiu} className="imageQuemCurtiu" alt="" /> <h3 data-test="likes-number">Curtido por {dado.quemCurtiu} e outras {dado.qntsPessoas} pessoas</h3>
                     </div>
                     
                 </div>
