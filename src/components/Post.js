@@ -8,12 +8,15 @@ import React, { useState } from 'react';
 
 
 export default function Post(){
-    const [backgroundColor, setBackgroundColor] = useState('');
+    const [icon, setIcon] = useState('heart-outline');
+    const [color, setColor] = useState('');
     const handleClickButton = () => {
-        if (backgroundColor === "red") {
-            setBackgroundColor("");
+        if (color === "red") {
+            setColor("");
+            setIcon('heart-outline');
         } else {
-            setBackgroundColor("red");
+            setColor("red");
+            setIcon('heart');
         }
     };
     const dados = [
@@ -37,8 +40,8 @@ export default function Post(){
                     </div>
                     <img className="postImage" data-test="post-image" src={dado.userImage} alt={dado.userName} />
                     <div className="icones flex">
-                        <div className="coracao iconJump" style={{ backgroundColor: backgroundColor }} onClick={handleClickButton}>
-                            <ion-icon name="heart-outline" data-test="like-post"></ion-icon>
+                        <div className="coracao iconJump">
+                            <ion-icon style={{ color: color }} onClick={handleClickButton} name={icon} data-test="like-post"></ion-icon>
                             </div>  
                         <img className="iconJump" src={chatbubble} alt="Chatbubble" />
                         <img className="iconJump" src={aviao} alt="Airplane" />
