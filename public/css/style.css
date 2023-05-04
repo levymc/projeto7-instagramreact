@@ -239,10 +239,18 @@ body{
     transform: scale(1.5);
 }
 .sobre{
+    margin-top: 2em;
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
     color: #C7C7C7;
     flex-wrap: wrap;
     gap:0.2em;
+}
+.copyright{
+    margin-top: 2em;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #C7C7C7;
 }

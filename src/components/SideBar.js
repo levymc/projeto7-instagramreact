@@ -13,6 +13,7 @@ export default function Contatos(){
                     <text className="pointer">Termos</text> • <text className="pointer">Localizações</text> • <text className="pointer">Contas mais relevantes</text> • <text className="pointer">Hashtags</text> • <br />
                     <text className="pointer">Idioma</text>
                 </div>
+                <div className="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
             </div>
         </div>
     )
