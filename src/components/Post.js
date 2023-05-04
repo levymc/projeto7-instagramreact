@@ -11,14 +11,10 @@ export default function Post(){
     const [icon, setIcon] = useState('heart-outline');
     const [color, setColor] = useState('');
     const handleClickButton = () => {
-        if (color === "red") {
-            setColor("");
-            setIcon('heart-outline');
-        } else {
-            setColor("red");
-            setIcon('heart');
-        }
+        color === "red" ? setColor("") : setColor("red");
+        color === "red" ? setIcon('heart-outline') : setIcon('heart');
     };
+      
     const dados = [
         {
             userImage: ruivo,
