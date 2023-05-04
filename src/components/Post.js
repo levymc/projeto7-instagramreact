@@ -27,7 +27,7 @@ export default function Post(){
                     </div>
                     <img className="postImage" data-test="post-image" src={dado.userImage} alt={dado.userName} />
                     <div className="icones flex">
-                        <img className="iconJump" src={heart} data-test="like-post" alt="Heart" />
+                        <img className="iconJump like" src={heart} data-test="like-post" alt="Heart" />
                         <img className="iconJump" src={chatbubble} alt="Chatbubble" />
                         <img className="iconJump" src={aviao} alt="Airplane" />
                         <img className="iconJump marcador" data-test="save-post" src={marcador} alt="Marcador" />
