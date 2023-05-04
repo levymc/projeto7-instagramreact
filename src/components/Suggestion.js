@@ -19,7 +19,7 @@ export default function Suggestion(){
         {contatos.map((user) => 
             <div className="contato">
                 <div className="pacotinho flex">
-                    <img src={user.image} alt={user.name} />
+                    <img className="miniImage" src={user.image} alt={user.name} />
                     <div className="escritos">
                         <h4>{user.name}</h4>
                         <h5>Segue Você</h5>
