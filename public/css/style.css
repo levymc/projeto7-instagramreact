@@ -170,9 +170,20 @@ body{
 .icones{
     padding: 0.5em;
     gap: 0.5em;
+    position: relative;
+}
+.marcador{
+    position: absolute;
+    right: 0.5em;
 }
 .legenda{
+    align-items: center;
+    gap: 0.5em;
     padding: 0.5em;
+}
+.imageQuemCurtiu{
+    width: 20px;
+    border-radius: 50%;
 }
 
 
