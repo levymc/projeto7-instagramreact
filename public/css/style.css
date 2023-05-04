@@ -66,7 +66,6 @@ body{
 .stories{
     gap:1em;
     box-sizing: border-box;
-    padding: 1em;
     height: 6em;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +73,20 @@ body{
     width: 55%;
     overflow-y: hidden;
 }
+
+.stories{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    width: 100%;
+    padding: 3em 0 3em 1em;
+    height: 5em;
+    margin-bottom: 1.75em;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
 .container-story{
     display: flex;
     flex-direction: column;
@@ -85,7 +98,7 @@ body{
 }
 .story{
     cursor: pointer;
-    background-image: url("../img/stories_background.jpg");
+    background-image: url("../assets/img/stories_background.jpg");
     background-size: cover;
     border-radius: 50%;
     height: 3.5em;
@@ -162,17 +175,6 @@ body{
     padding: 0.5em;
 }
 
-.stories{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    width: 100%;
-    height: 5em;
-    margin-bottom: 1.75em;
-    background: #FFFFFF;
-    border: 1px solid #DBDBDB;
-    border-radius: 3px;
-}
 
 
 
