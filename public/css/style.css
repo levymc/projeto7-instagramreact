@@ -121,6 +121,7 @@ body{
 
 .container{
     flex-direction: column;
+    padding-bottom: 2em;
 }
 
 .container-topo{

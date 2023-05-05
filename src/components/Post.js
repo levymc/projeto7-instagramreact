@@ -34,7 +34,7 @@ export default function Post(){
                         <h3>{dado.userName}</h3>
                         <img className="pontinhos pointer" src={pontinhos} alt="Pontinhos" />
                     </div>
-                    <img className="postImage" data-test="post-image" src={dado.userImage} alt={dado.userName} />
+                    <img className="postImage" onDoubleClick={() => {alert("Oi")}} data-test="post-image" src={dado.userImage} alt={dado.userName} />
                     <div className="icones flex">
                         <div className="coracao iconJump">
                             <ion-icon style={{ color: color }} onClick={handleClickButton} name={icon} data-test="like-post"></ion-icon>
