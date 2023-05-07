@@ -11,30 +11,57 @@ export default function Post() {
     const [icon, setIcon] = useState('heart-outline');
     const [color, setColor] = useState('');
     const handleClickButton = () => {
-      color === 'red' ? setColor('') : setColor('red');
-      color === 'red' ? setIcon('heart-outline') : setIcon('heart');
+        color === 'red' ? setColor('') : setColor('red');
+        color === 'red' ? setIcon('heart-outline') : setIcon('heart');
     };
-  
+    let contador = 0;
+
     const [showIcon, setShowIcon] = useState(false);
-  
+
+    const [desLikar, setdesLikar] = useState(false);
+
     const handleDoubleClick = () => {
-      setShowIcon(true);
-      handleClickButton();
-      setTimeout(() => {
+        setShowIcon(true);
+        if (!desLikar){
+            aumentaLike();
+            setdesLikar(true);
+        }else{
+            diminuiLike();
+            setdesLikar(false);
+        }
+        handleClickButton();
+        setTimeout(() => {
         setShowIcon(false);
-      }, 1000);
+        }, 1000);
     };
-  
-    const dados = [
-      {
+
+    const [dados, setDados] = useState([
+        {
         userImage: ruivo,
         userName: 'levymc',
         urlImage: ruivo,
         quemCurtiu: 'frederico',
         imgQuemCurtiu: ruivo,
         qntsPessoas: 199823,
-      },
-    ];
+        },
+    ]);
+
+    const aumentaLike = () => {
+        setDados((prevDados) => {
+            const updatedDados = [...prevDados];
+            updatedDados[0].qntsPessoas += 1;
+            return updatedDados;
+        });
+    };
+
+    const diminuiLike = () => {
+        setDados((prevDados) => {
+            const updatedDados = [...prevDados];
+            updatedDados[0].qntsPessoas -= 1;
+            return updatedDados;
+        });
+    }
+      
   
     return (
       <>
@@ -82,4 +109,8 @@ export default function Post() {
         ))}
       </>
     );
+  }
+
+  function aumentaLike(){
+
   }
