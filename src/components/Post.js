@@ -1,6 +1,5 @@
 import ruivo from "../img/ruivo.png"
 import chatbubble from "../img/chatbubble.svg"
-import heart from "../img/heart.svg"
 import aviao from "../img/aviao.svg"
 import marcador from "../img/marcador.svg"
 import pontinhos from "../img/pontinhos.svg"
@@ -8,31 +7,24 @@ import React, { useState } from 'react';
 
 
 export default function Post() {
+
     const [icon, setIcon] = useState('heart-outline');
     const [color, setColor] = useState('');
-    const handleClickButton = () => {
-        color === 'red' ? setColor('') : setColor('red');
-        color === 'red' ? setIcon('heart-outline') : setIcon('heart');
-    };
-    let contador = 0;
 
     const [showIcon, setShowIcon] = useState(false);
 
-    const [desLikar, setdesLikar] = useState(false);
-
-    const handleDoubleClick = () => {
-        setShowIcon(true);
-        if (!desLikar){
-            aumentaLike();
-            setdesLikar(true);
-        }else{
+    const handleClickButton = () => {
+        if (color === `red`){
+            setColor('');
+            setIcon('heart-outline');
             diminuiLike();
-            setdesLikar(false);
+            setShowIcon(false);
+        }else{
+            setColor('red');
+            setIcon('heart');
+            setShowIcon(true);
+            aumentaLike();
         }
-        handleClickButton();
-        setTimeout(() => {
-        setShowIcon(false);
-        }, 1000);
     };
 
     const [dados, setDados] = useState([
@@ -75,7 +67,7 @@ export default function Post() {
             <div className="container-postImage">
               <img
                 className="postImage"
-                onDoubleClick={handleDoubleClick}
+                onDoubleClick={handleClickButton}
                 data-test="post-image"
                 src={dado.userImage}
                 alt={dado.userName}
@@ -109,8 +101,4 @@ export default function Post() {
         ))}
       </>
     );
-  }
-
-  function aumentaLike(){
-
   }
