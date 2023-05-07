@@ -19,6 +19,7 @@ export default function Post() {
   
     const handleDoubleClick = () => {
       setShowIcon(true);
+      handleClickButton();
       setTimeout(() => {
         setShowIcon(false);
       }, 1000);
