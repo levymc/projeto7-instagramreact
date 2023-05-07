@@ -10,6 +10,9 @@ body{
 .pointer {
     cursor: pointer;
 }
+.display-none{
+    display: none;
+}
 
 /* Topo */
 .iconesDireita{
@@ -147,10 +150,16 @@ body{
 .container-postImage{
     position: relative;
 }
-.container-postImage ion-icon{
+.divIcon{
     position: absolute;
     top:50%;
     left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+.container-postImage ion-icon{
+    
+    color: red;
+    font-size: 300px;
 }
 .conteudo-posts{
     height: auto;
