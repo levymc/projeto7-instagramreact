@@ -144,7 +144,14 @@ body{
     flex-direction: column;
     height: auto;
 }
-
+.container-postImage{
+    position: relative;
+}
+.container-postImage ion-icon{
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
 .conteudo-posts{
     height: auto;
     justify-content: center;
@@ -162,6 +169,7 @@ body{
 }
 .postImage{
     width: 100%;
+    display: block;
 }
 .userName{
     align-items: center;
