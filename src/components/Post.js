@@ -23,6 +23,9 @@ export default function Post() {
             setColor('red');
             setIcon('heart');
             setShowIcon(true);
+            setTimeout(() => {
+                setShowIcon(false);
+            }, 800);
             aumentaLike();
         }
     };
