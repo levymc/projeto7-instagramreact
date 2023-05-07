@@ -147,20 +147,57 @@ body{
     flex-direction: column;
     height: auto;
 }
-.container-postImage{
+.container-postImage {
     position: relative;
-}
-.divIcon{
+  }
+  
+.divIcon {
     position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
+    top: 30%;
+    left: 35%;
+    text-shadow: 10px 10px 50px rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
 }
-.container-postImage ion-icon{
-    
-    color: red;
-    font-size: 300px;
+
+.scale-up-bottom {
+	-webkit-animation: scale-up-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+@-webkit-keyframes scale-up-bottom {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+@keyframes scale-up-bottom {
+0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+}
+}
+
+.container-postImage ion-icon {
+    color: rgb(255, 255, 255);
+    font-size: 200px;
+  }
+  
+
 .conteudo-posts{
     height: auto;
     justify-content: center;
